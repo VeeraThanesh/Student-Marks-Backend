@@ -30,15 +30,15 @@ const createStudentController = async (req, res) => {
     } = req.body;
 
     const cutOff =
+      parseInt(mathematics) + parseInt(physics) + parseInt(chemistry);
+
+    const totalMark =
       parseInt(tamil) +
       parseInt(english) +
       parseInt(biology) +
       parseInt(mathematics) +
       parseInt(physics) +
       parseInt(chemistry);
-
-    const totalMark =
-      parseInt(mathematics) + parseInt(physics) + parseInt(chemistry);
 
     const totalCutOff = cutOff / 2;
 

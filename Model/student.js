@@ -13,6 +13,7 @@ const studentSchema = new mongoose.Schema({
   biology: { type: String, required: true },
   physics: { type: String, required: true },
   chemistry: { type: String, required: true },
+  totalMark: { type: String, required: true },
   totalCutOff: { type: Number, required: true },
 });
 
